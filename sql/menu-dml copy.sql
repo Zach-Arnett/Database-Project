@@ -20,7 +20,7 @@ DELETE FROM ingredients;
 -- (customer_ID (auto increments), email, password, created_at (auto generates), kent_ID, first_name, last_name, phone_number, payment_token)
 ALTER TABLE customer AUTO_INCREMENT = 1; -- Ensures incrementing starts from 1
 INSERT INTO customer (email, password, created_at, kent_ID, first_name, last_name, phone_number, payment_token) VALUES ('jsmith@kent.edu', '$2y$10$ZtHWIPQ.lWm6KRDSPRZtbeP9i1DOGKl.VQ4DIWUPxn/HltxqQqDou', '2024-04-23 19:22:44', '123456789', 'John', 'Smith', '440-123-1234', 'A1B2C3D4E');
-INSERT INTO customer (email, password, created_at, kent_ID, first_name, last_name, phone_number, payment_token) VALUES ('tswift@kent.edu', '$2y$10$xVS.mAjSRvUXMPPyXKhhi.3mzGV8x2Kw7tDzY5Hi.FbRcczT50.mm', '2024-04-23 19:27:12', '222222222', 'Emily', 'Brown', '440-333-4444', 'ABCD12345');
+INSERT INTO customer (email, password, created_at, kent_ID, first_name, last_name, phone_number, payment_token) VALUES ('tswift@kent.edu', '$2y$10$xVS.mAjSRvUXMPPyXKhhi.3mzGV8x2Kw7tDzY5Hi.FbRcczT50.mm', '2024-04-23 19:27:12', '222222222', 'Taylor', 'Swift', '440-333-4444', 'ABCD12345');
 -- (order_ID (auto increments), order_number, ME_order)
 ALTER TABLE order_info AUTO_INCREMENT = 1; -- Ensures incrementing starts from 1
 INSERT INTO order_info (order_number, ME_order) VALUES ('001', FALSE);
