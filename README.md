@@ -28,4 +28,6 @@ $dbname = "X";
 ```
 4) in public_html, import the whole folder Database-Project
 
-
+## Accessing the Project
+1) https://dbdev.cs.kent.edu/~(yourUserName)/Database-Project/pages/login.php
+    EX) https://dbdev.cs.kent.edu/~zarnett2/Database-Project/pages/login.php
