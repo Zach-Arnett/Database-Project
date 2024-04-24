@@ -1,0 +1,55 @@
+/* Index / Dining Location Stylesheet */
+
+.container{
+    border: 5px solid #eaab00;
+    width: 90%;
+    text-align: center;
+    margin: 1em;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eaab00;
+    min-height: 4em;
+    margin: 0.4em;
+    background-color: #FFFFFF;
+    padding: 0.5em;
+}
+
+.closed-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eaab00;
+    min-height: 4em;
+    margin: 0.4em;
+    background-color: #DDDDDD;
+}
+
+.button-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0.5em;
+}
+.button-row form{
+    width: 15%;
+    margin: 0.5em;
+}
+.option-button{
+    width: 100%;
+    border: 0.01em solid #000000; 
+    padding: 0.3em;
+    margin: 0.2em;
+    background-color: #eaab00;
+    cursor: pointer;
+}
+.option-button:hover{
+    background-color: #cd9600;
+    transition-duration: 0.3s;
+}

@@ -1,0 +1,80 @@
+/* Admin Menu Stylesheet */
+
+.container{
+    border: 5px solid #eaab00;
+    width: 90%;
+    text-align: center;
+    margin: 1em;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eaab00;
+    min-height: 4em;
+    margin: 0.4em;
+    background-color: #FFFFFF;
+}
+
+.closed-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eaab00;
+    min-height: 4em;
+    margin: 0.4em;
+    background-color: #DDDDDD;
+}
+
+.add-items{
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    justify-content: space-around;
+    align-items: center;
+}
+.add-item-col{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.scroll-box{
+    overflow-y: scroll; 
+    height: 9em;
+    width: 100%;
+    border: 0.01em solid #000000; 
+    padding: 0.1em;
+    text-align: left;
+}
+
+.submit-button{
+    width: 10%;
+    border: 0.01em solid #000000; 
+    padding: 0.5em;
+    margin: 0.2em;
+    background-color: #eaab00;
+    cursor: pointer;
+    font-weight: bold;
+}
+.submit-button:hover{
+    background-color: #cd9600;
+    transition-duration: 0.3s;
+}
+
+table{
+    border: 0.01em solid #000000; 
+    padding: 0.5em;
+}
+td{
+    border: 0.01em solid #000000; 
+    padding: 0.5em;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}

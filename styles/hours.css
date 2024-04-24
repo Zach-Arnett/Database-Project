@@ -1,0 +1,20 @@
+/* Hours of Operation Stylesheet */
+
+.container{
+    border: 5px solid #eaab00;
+    width: 90%;
+    text-align: center;
+    margin: 1em;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eaab00;
+    min-height: 4em;
+    margin: 0.4em;
+    padding: 0.6em;
+    background-color: #FFFFFF;
+}

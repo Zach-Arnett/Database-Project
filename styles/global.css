@@ -1,0 +1,88 @@
+/* Global Stylesheet */
+
+body{
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: calibri;
+    overflow-y: scroll;
+}
+
+/*----------Header----------*/
+header{
+    background-color: #002664;
+    position: static;
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+header p {
+    color: #eaab00;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: calibri;
+    text-align: center;
+    margin: 0;
+    margin-top: 0.4em;
+}
+header hr{
+    width: 60%;
+    border: 0.01em solid #eaab00;
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 1em auto;
+    padding: 0;
+    justify-content: space-around;
+    width: 60%;
+}
+header nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: calibri;
+    transition: color 0.3s ease;
+}
+header nav a:hover{ 
+    color: #eaab00; 
+}
+header nav li{
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: calibri;
+    display: inline-block;
+}
+
+/*----------Structure----------*/
+h1{
+    text-align: center;
+    margin: 0.4em;
+    margin-top: 0.7em;
+    font-size: 3em;
+}
+h2{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+h3{
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 0;
+}
+h4{
+    font-weight: bold;
+    margin: 0;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
