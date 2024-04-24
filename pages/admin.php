@@ -199,6 +199,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             }
             header("Refresh:0;url=admin.php");
         }
+
+        // Delete Dining Location
+        if (isset($_POST["loc_deleted"])) {
+            // SQL Statement to delete item
+            $location = $_POST['delete_location'];
+            $sqlstatement = $conn->prepare("DELETE FROM dining_location WHERE location_name = ?");
+            $sqlstatement->bind_param("s", $location);
+            $sqlstatement->execute();
+            if ($sqlstatement->affected_rows > 0) {
+                $_SESSION["feedback"] =  "Dining location \"$location\" deleted successfully";
+            } else {
+                $_SESSION["feedback"] =  "Error deleting dining location \"$location\"";
+            }
+            header("Refresh:0;url=admin.php");
+        }
     ?>
 
 
@@ -381,6 +396,26 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <input class="submit-button" type="submit" value="Submit">
                 <input type="hidden" name="location_submitted" value="1">
             </form>
+        </div>
+
+        <!-- Delete Dining Location -->
+        <div class="option">
+            <h3>Delete Dining Location:</h3><br>
+            <?php
+            // Create Form with all locations
+            $sql = "SELECT location_name FROM dining_location";
+            $result = $conn->query($sql);
+            echo "<form method=post style=\"width: 100%;\">";
+            echo "<select name=\"delete_location\">";
+            echo "<option value=\"\">Select an Option</option>";
+            while($row = $result->fetch_assoc()) {
+                echo "<option value=\"" . $row['location_name'] . "\">" . $row['location_name'] . "</option>";
+            }
+            echo "</select><br><br>";
+            echo "<input class=\"submit-button\" type=\"submit\" value=\"Submit\">";
+            echo "<input type=\"hidden\" name=\"loc_deleted\" value=\"1\" >";
+            echo "</form>";
+            ?>
         </div>
     </div>
 

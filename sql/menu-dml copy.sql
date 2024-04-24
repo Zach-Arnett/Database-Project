@@ -138,6 +138,14 @@ INSERT INTO food_items VALUES ('Quesadilla', 8.99, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Breakfast Sandwich', 7.99, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Pizza', 10.99, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Chicken Tenders', 6.99, 'Main', TRUE);
+INSERT INTO food_items VALUES('Crispy Chicken Sandwich', 7.99, 'Main', TRUE); -- Start new items
+INSERT INTO food_items VALUES('Pancakes', 6.99, 'Main', TRUE);
+INSERT INTO food_items VALUES('Grilled Chicken Wrap', 5.49, 'Main', TRUE);
+INSERT INTO food_items VALUES('Grilled Chicken Bacon Ranch Wrap', 5.49, 'Main', FALSE);
+INSERT INTO food_items VALUES('Meatball Sub', 9.50, 'Main', TRUE);
+INSERT INTO food_items VALUES('Philly Cheese Steak', 9.50, 'Main', TRUE);
+INSERT INTO food_items VALUES('Grilled Cheese', 4.49, 'Main', TRUE);
+INSERT INTO food_items VALUES('Chicken Philly', 8.99, 'Main', TRUE); -- End new items
 INSERT INTO food_items VALUES ('Italian Sub', 9.49, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Mozzarella Sticks', 5.49, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Salmon Avacado Roll', 9.99, 'Main', FALSE);
@@ -214,6 +222,15 @@ INSERT INTO ingredients VALUES ('Strawberry');
 INSERT INTO ingredients VALUES ('Sourdough Bread');
 INSERT INTO ingredients VALUES ('Tapioca Pearls');
 INSERT INTO ingredients VALUES ('Flour');
+INSERT INTO ingredients VALUES ('Beef'); -- New ingredients from here down until allergens start
+INSERT INTO ingredients VALUES ('Tortilla');
+INSERT INTO ingredients VALUES ('Pancake Mix');
+INSERT INTO ingredients VALUES ('Mozzarella Cheese');
+INSERT INTO ingredients VALUES ('Pepperjack Cheese');
+INSERT INTO ingredients VALUES ('Italian Dressing');
+INSERT INTO ingredients Values ('Propellant');
+INSERT INTO ingredients VALUES ('Bread');
+INSERT INTO ingredients VALUES ('Wrap');
 -- (ingredient_name, allergen)
 INSERT INTO allergens VALUES ('Cheese', 'Dairy');
 INSERT INTO allergens VALUES ('Egg', 'Egg');
@@ -235,6 +252,30 @@ INSERT INTO allergens VALUES ('Biscuit', 'Wheat');
 INSERT INTO allergens VALUES ('English Muffin', 'Wheat');
 INSERT INTO allergens VALUES ('Sourdough Bread', 'Wheat');
 INSERT INTO allergens VALUES ('Flour', 'Wheat');
+INSERT INTO allergens VALUES ('Pepperjack Cheese', 'Dairy'); -- New allergens from here down
+INSERT INTO allergens VALUES ('Pancakes', 'Dairy');
+INSERT INTO allergens VALUES ('Pancakes', 'Soy');
+INSERT INTO allergens VALUES ('Pancakes', 'Wheat');
+INSERT INTO allergens VALUES ('Grilled Chicken Wrap', 'Dairy');
+INSERT INTO allergens VALUES ('Grilled Chicken Wrap', 'Egg');
+INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Dairy');
+INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Egg');
+INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Soy');
+INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Wheat');
+INSERT INTO allergens VALUES ('Meatbull Sub', 'Dairy');
+INSERT INTO allergens VALUES ('Meatbull Sub', 'Soy');
+INSERT INTO allergens VALUES ('Meatbull Sub', 'Soy');
+INSERT INTO allergens VALUES ('Meatball Sub', 'Wheat');
+INSERT INTO allergens VALUES ('Philly Cheese Steak', 'Dairy');
+INSERT INTO allergens VALUES ('Philly Cheese Steak', 'Soy');
+INSERT INTO allergens VALUES ('Philly Cheese Steak', 'Wheat');
+INSERT INTO allergens VALUES ('Chicken Philly', 'Dairy');
+INSERT INTO allergens VALUES ('Chicken Philly', 'Soy');
+INSERT INTO allergens VALUES ('Chicken Philly', 'Wheat');
+INSERT INTO allergens VALUES ('Grilled Cheese', 'Milk');
+INSERT INTO allergens VALUES ('Grilled Cheese', 'Soy');
+INSERT INTO allergens VALUES ('Grilled Cheese', 'Wheat');
+INSERT INTO allergens VALUES ('Shawarma', 'Wheat');
 
 -- ----------Referencing Tables (Multiple Foreign Keys)
 -- (customer_ID, order_ID)
@@ -262,6 +303,15 @@ INSERT INTO offers VALUES ('Rosie''s Diner', 'Assorted Fruit');
 INSERT INTO offers VALUES ('Rosie''s Diner', 'Dr. Pepper');
 INSERT INTO offers VALUES ('Rosie''s Diner', 'Pepsi');
 INSERT INTO offers VALUES ('Rosie''s Diner', 'Bottled Water');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Crispy Chicken Sandwich');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Pancakes');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Grilled Chicken Wrap');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Grilled Chicken Bacon Ranch Wrap');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Meatball Sub');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Philly Cheese Steak');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Grilled Cheese');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Chicken Philly');
+INSERT INTO offers VALUES ('Rosie''s Diner', 'Italian Sub');
 
 INSERT INTO offers VALUES ('Rosie''s Deli', 'Pizza');
 INSERT INTO offers VALUES ('Rosie''s Deli', 'Potato Chips');
@@ -326,6 +376,9 @@ INSERT INTO offers VALUES ('Tahini', 'Dr. Pepper');
 INSERT INTO offers VALUES ('Tahini', 'Pepsi');
 INSERT INTO offers VALUES ('Tahini', 'Strawberry Bubble Tea');
 INSERT INTO offers VALUES ('Tahini', 'Bottled Water');
+INSERT INTO offers VALUES ('Tahini', 'Burger'); -- New items here down for Tahini
+INSERT INTO offers VALUES ('Tahini', 'Fries');
+INSERT INTO offers VALUES ('Tahini', 'Shawarma');
 
 INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Breakfast Sandwich');
 INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Italian Sub');
@@ -440,6 +493,38 @@ INSERT INTO contains VALUES ('Salad', 'Spinach');
 INSERT INTO contains VALUES ('Side Salad', 'Lettuce');
 INSERT INTO contains VALUES ('Side Salad', 'Chicken');
 INSERT INTO contains VALUES ('Side Salad', 'Spinach');
-
+INSERT INTO contains VALUES ('Crispy Chicken Sandwich', 'Chicken'); -- Extra ingredients listed from here down
+INSERT INTO contains VALUES ('Crispy Chicken Sandwich', 'Hamburger Bun');
+INSERT INTO contains VALUES ('Crispy Chicken Sandwich', 'Tomato');
+INSERT INTO contains VALUES ('Crispy Chicken Sandwich', 'Red Onions');
+INSERT INTO contains VALUES ('Crispy Chicken Sandwich', 'Lettuce');
+INSERT INTO contains VALUES ('Pancakes', 'Pancake Mix');
+INSERT INTO contains VALUES ('Crispy Chicken Sandwich', 'Propellant');
+INSERT INTO contains VALUES ('Grilled Chicken Wrap', 'Tortilla');
+INSERT INTO contains VALUES ('Grilled Chicken Wrap', 'Tortilla');
+INSERT INTO contains VALUES ('Grilled Chicken Wrap', 'Egg');
+INSERT INTO contains VALUES ('Grilled Chicken Wrap', 'Chicken');
+INSERT INTO contains VALUES ('Grilled Chicken Wrap', 'Lettuce');
+INSERT INTO contains VALUES ('Grilled Chicken Wrap', 'Cheese');
+INSERT INTO contains VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Chicken');
+INSERT INTO contains VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Tortilla');
+INSERT INTO contains VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Bacon');
+INSERT INTO contains VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Ranch');
+INSERT INTO contains VALUES ('Meatball Sub', 'Beef');
+INSERT INTO contains VALUES ('Meatball Sub', 'Wheatberry Bread');
+INSERT INTO contains VALUES ('Meatball Sub', 'Cheese');
+INSERT INTO contains VALUES ('Philly Cheese Steak', 'Beef');
+INSERT INTO contains VALUES ('Philly Cheese Steak', 'Cheese');
+INSERT INTO contains VALUES ('Philly Cheese Steak', 'Red Onions');
+INSERT INTO contains VALUES ('Philly Cheese Steak', 'Wheatberry Bread');
+INSERT INTO contains VALUES ('Grilled Cheese', 'Bread');
+INSERT INTO contains VALUES ('Grilled Cheese', 'Cheese');
+INSERT INTO contains VALUES ('Chicken Philly', 'Chicken');
+INSERT INTO contains VALUES ('Chicken Philly', 'Cheese');
+INSERT INTO contains VALUES ('Chicken Philly', 'Wheatberry Bread');
+INSERT INTO contains VALUES ('Chicken Philly', 'Red Onions');
+INSERT INTO contains VALUES ('Shawarma', 'Chicken');
+INSERT INTO contains VALUES ('Shawarma', 'Pickle');
+INSERT INTO contains VALUES ('Shawarma', 'Wrap');
 
 
