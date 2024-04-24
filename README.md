@@ -11,11 +11,11 @@
 
 ## Uploading Files to DBDev to be hosted
 1) Download Filezilla (You can also just use SSH but it's way more tedious)
-2) Connect to DBDev
-   Host:     dbdev.cs.kent.edu
-   Username: (your kent username)
-   Password: (your kent password)
-   Port:     22
+2) Connect to DBDev <br>
+   Host:     dbdev.cs.kent.edu <br>
+   Username: (your kent username) <br>
+   Password: (your kent password) <br>
+   Port:     22 <br>
 3) in the directory of your username, add a config file named config.inc
    The config file should be the following where X is your kent username and Y is your PHPMyAdmin password
 ```
