@@ -18,12 +18,14 @@
    Port:     22
 3) in the directory of your username, add a config file named config.inc
    The config file should be the following where X is your kent username and Y is your PHPMyAdmin password
-`
+```
 <?php
 $servername = "localhost";
 $username = "X";
 $password = "Y";
 $dbname = "X";
 ?>
-`
+```
+4) in public_html, import the whole folder Database-Project
+
 
