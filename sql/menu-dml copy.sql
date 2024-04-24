@@ -257,26 +257,6 @@ INSERT INTO allergens VALUES ('Pepperjack Cheese', 'Dairy'); -- New allergens fr
 INSERT INTO allergens VALUES ('Pancake Mix', 'Dairy');
 INSERT INTO allergens VALUES ('Pancake Mix', 'Soy');
 INSERT INTO allergens VALUES ('Pancake Mix', 'Wheat');
--- INSERT INTO allergens VALUES ('Grilled Chicken Wrap', 'Dairy');
--- INSERT INTO allergens VALUES ('Grilled Chicken Wrap', 'Egg');
--- INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Dairy');
--- INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Egg');
--- INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Soy');
--- INSERT INTO allergens VALUES ('Grilled Chicken Bacon Ranch Wrap', 'Wheat');
--- INSERT INTO allergens VALUES ('Meatbull Sub', 'Dairy');
--- INSERT INTO allergens VALUES ('Meatbull Sub', 'Soy');
--- INSERT INTO allergens VALUES ('Meatbull Sub', 'Soy');
--- INSERT INTO allergens VALUES ('Meatball Sub', 'Wheat');
--- INSERT INTO allergens VALUES ('Philly Cheese Steak', 'Dairy');
--- INSERT INTO allergens VALUES ('Philly Cheese Steak', 'Soy');
--- INSERT INTO allergens VALUES ('Philly Cheese Steak', 'Wheat');
--- INSERT INTO allergens VALUES ('Chicken Philly', 'Dairy');
--- INSERT INTO allergens VALUES ('Chicken Philly', 'Soy');
--- INSERT INTO allergens VALUES ('Chicken Philly', 'Wheat');
--- INSERT INTO allergens VALUES ('Grilled Cheese', 'Milk');
--- INSERT INTO allergens VALUES ('Grilled Cheese', 'Soy');
--- INSERT INTO allergens VALUES ('Grilled Cheese', 'Wheat');
--- INSERT INTO allergens VALUES ('Shawarma', 'Wheat');
 
 -- ----------Referencing Tables (Multiple Foreign Keys)
 -- (customer_ID, order_ID)
