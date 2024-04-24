@@ -162,8 +162,15 @@ INSERT INTO food_items VALUES ('Strawberry Bubble Tea', 5.49, 'Drink', FALSE);
 INSERT INTO food_items VALUES ('Bottled Water', 1.29, 'Drink', TRUE);
 INSERT INTO food_items VALUES ('Caramel Macchiato', 6.00, 'Drink', FALSE);
 INSERT INTO food_items VALUES ('Cold Brew', 6.00, 'Drink', FALSE);
+INSERT INTO food_items VALUES ('Light Roast', 2.00, 'Drink', FALSE);
+INSERT INTO food_items VALUES ('Dark Roast', 2.00, 'Drink', FALSE);
+INSERT INTO food_items VALUES ('Pink Drink', 5.00, 'Drink', FALSE);
+INSERT INTO food_items VALUES ('Grilled Cheese', 3.49, 'Side', FALSE);
+INSERT INTO food_items VALUES ('Chocolate Cake Pop', 5.29, 'Side', FALSE);
+INSERT INTO food_items VALUES ('Coffee Cake', 4.59, 'Side', FALSE);
 -- (ingredient_name)
 INSERT INTO ingredients VALUES ('Cheese');
+INSERT INTO ingredients VALUES ('Chocolate');
 INSERT INTO ingredients VALUES ('Beef');
 INSERT INTO ingredients VALUES ('Tomato');
 INSERT INTO ingredients VALUES ('Pickle');
@@ -203,6 +210,10 @@ INSERT INTO ingredients VALUES ('Sausage');
 INSERT INTO ingredients VALUES ('Biscuit');
 INSERT INTO ingredients VALUES ('English Muffin');
 INSERT INTO ingredients VALUES ('Potato');
+INSERT INTO ingredients VALUES ('Strawberry');
+INSERT INTO ingredients VALUES ('Sourdough Bread');
+INSERT INTO ingredients VALUES ('Tapioca Pearls');
+INSERT INTO ingredients VALUES ('Flour');
 -- (ingredient_name, allergen)
 INSERT INTO allergens VALUES ('Cheese', 'Dairy');
 INSERT INTO allergens VALUES ('Egg', 'Egg');
@@ -222,8 +233,8 @@ INSERT INTO allergens VALUES ('Bagel', 'Sesame');
 INSERT INTO allergens VALUES ('Bagel', 'Wheat');
 INSERT INTO allergens VALUES ('Biscuit', 'Wheat');
 INSERT INTO allergens VALUES ('English Muffin', 'Wheat');
-
-
+INSERT INTO allergens VALUES ('Sourdough Bread', 'Wheat');
+INSERT INTO allergens VALUES ('Flour', 'Wheat');
 
 -- ----------Referencing Tables (Multiple Foreign Keys)
 -- (customer_ID, order_ID)
@@ -328,10 +339,22 @@ INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Bottled Water');
 INSERT INTO offers VALUES ('Starbucks (Library)', 'Caramel Macchiato');
 INSERT INTO offers VALUES ('Starbucks (Library)', 'Cold Brew');
 INSERT INTO offers VALUES ('Starbucks (Library)', 'Bottled Water');
+INSERT INTO offers VALUES ('Starbucks (Library)', 'Dark Roast');
+INSERT INTO offers VALUES ('Starbucks (Library)', 'Light Roast');
+INSERT INTO offers VALUES ('Starbucks (Library)', 'Pink Drink');
+INSERT INTO offers VALUES ('Starbucks (Library)', 'Breakfast Sandwich');
+INSERT INTO offers VALUES ('Starbucks (Library)', 'Chocolate Cake Pop');
+INSERT INTO offers VALUES ('Starbucks (Library)', 'Grilled Cheese');
+INSERT INTO offers VALUES ('Starbucks (Library)', 'Coffee Cake');
 
 INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Caramel Macchiato');
 INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Cold Brew');
 INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Bottled Water');
+INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Dark Roast');
+INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Light Roast');
+INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Pink Drink');
+INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Coffee Cake');
+INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Chocolate Cake Pop');
 -- (item_name, ingredient_name)
 INSERT INTO contains VALUES ('Burger', 'Cheese');
 INSERT INTO contains VALUES ('Burger', 'Beef');
@@ -339,6 +362,23 @@ INSERT INTO contains VALUES ('Burger', 'Tomato');
 INSERT INTO contains VALUES ('Burger', 'Pickle');
 INSERT INTO contains VALUES ('Burger', 'Ketchup');
 INSERT INTO contains VALUES ('Burger', 'Lettuce');
+INSERT INTO contains VALUES ('Coffee Cake', 'Coffee');
+INSERT INTO contains VALUES ('Coffee Cake', 'Egg');
+INSERT INTO contains VALUES ('Coffee Cake', 'Milk');
+INSERT INTO contains VALUES ('Coffee Cake', 'Flour');
+INSERT INTO contains VALUES ('Grilled Cheese', 'Sourdough Bread');
+INSERT INTO contains VALUES ('Grilled Cheese', 'Cheese');
+INSERT INTO contains VALUES ('Light Roast', 'Coffee');
+INSERT INTO contains VALUES ('Dark Roast', 'Coffee');
+INSERT INTO contains VALUES ('Pink Drink', 'Coffee');
+INSERT INTO contains VALUES ('Pink Drink', 'Strawberry');
+INSERT INTO contains VALUES ('Pink Drink', 'Milk');
+INSERT INTO contains VALUES ('Strawberry Bubble Tea', 'Strawberry');
+INSERT INTO contains VALUES ('Strawberry Bubble Tea', 'Tapioca Pearls');
+INSERT INTO contains VALUES ('Chocolate Cake Pop', 'Chocolate');
+INSERT INTO contains VALUES ('Chocolate Cake Pop', 'Milk');
+INSERT INTO contains VALUES ('Chocolate Cake Pop', 'Egg');
+INSERT INTO contains VALUES ('Chocolate Cake Pop', 'Flour');
 INSERT INTO contains VALUES ('Quesadilla', 'Cheese');
 INSERT INTO contains VALUES ('Quesadilla', 'Chicken');
 INSERT INTO contains VALUES ('Breakfast Sandwich', 'Cheese');
