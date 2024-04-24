@@ -156,7 +156,13 @@ INSERT INTO food_items VALUES ('Fried Egg', 6.59, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Hot Dog', 7.59, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Salad', 7.49, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Shawarma', 7.49, 'Main', TRUE);
+INSERT INTO food_items VALUES ('Black Forest Ham & Swiss on a Gluten Free Bun', '7.99', 'Main', TRUE);
+INSERT INTO food_items VALUES ('Chicken Bacon Club', '7.19', 'Main', TRUE);
+INSERT INTO food_items VALUES ('PB&J', '4.19', 'Main', TRUE);
 
+INSERT INTO food_items VALUES ('Cookie', '1.59', 'Side', TRUE);
+INSERT INTO food_items VALUES ('Croissant', '2.39', 'Side', TRUE);
+INSERT INTO food_items VALUES ('Donut', '1.59', 'Side', TRUE);
 INSERT INTO food_items VALUES ('Fries', 1.59, 'Side', TRUE);
 INSERT INTO food_items VALUES ('Curly Fries', 1.59, 'Side', TRUE);
 INSERT INTO food_items VALUES ('Potato Chips', 1.59, 'Side', TRUE);
@@ -164,6 +170,9 @@ INSERT INTO food_items VALUES ('Yogurt', 1.59, 'Side', TRUE);
 INSERT INTO food_items VALUES ('Side Salad', 1.99, 'Side', TRUE);
 INSERT INTO food_items VALUES ('Assorted Fruit', 1.49, 'Side', TRUE);
 
+INSERT INTO food_items VALUES ('Cappuccino', '3.19', 'Drink', TRUE);
+INSERT INTO food_items VALUES ('Espresso Shot', '1.99', 'Drink', FALSE);
+INSERT INTO food_items VALUES ('Hot Chocolate', '3.49', 'Drink', TRUE);
 INSERT INTO food_items VALUES ('Fountain Drink', 1.59, 'Drink', TRUE);
 INSERT INTO food_items VALUES ('Dr. Pepper', 1.59, 'Drink', TRUE);
 INSERT INTO food_items VALUES ('Pepsi', 1.59, 'Drink', TRUE);
@@ -232,6 +241,7 @@ INSERT INTO ingredients Values ('Propellant');
 INSERT INTO ingredients VALUES ('Bread');
 INSERT INTO ingredients VALUES ('Wrap');
 INSERT INTO ingredients VALUES ('Hamburger Bun');
+INSERT INTO ingredients VALUES ('Peanuts');
 -- (ingredient_name, allergen)
 INSERT INTO allergens VALUES ('Cheese', 'Dairy');
 INSERT INTO allergens VALUES ('Egg', 'Egg');
@@ -257,6 +267,7 @@ INSERT INTO allergens VALUES ('Pepperjack Cheese', 'Dairy'); -- New allergens fr
 INSERT INTO allergens VALUES ('Pancake Mix', 'Dairy');
 INSERT INTO allergens VALUES ('Pancake Mix', 'Soy');
 INSERT INTO allergens VALUES ('Pancake Mix', 'Wheat');
+INSERT INTO allergens VALUES ('Peanuts', 'Peanuts');
 
 -- ----------Referencing Tables (Multiple Foreign Keys)
 -- (customer_ID, order_ID)
@@ -368,6 +379,15 @@ INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Assorted Fruit');
 INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Dr. Pepper');
 INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Pepsi');
 INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Bottled Water');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Black Forest Ham & Swiss on a Gluten Free Bun');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Cappuccino');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Chicken Bacon Club');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Cookie');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Croissant');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Donut');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Espresso Shot');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Hot Chocolate');
+INSERT INTO offers VALUES ('George T. Simon III Cafe', 'PB&J');
 
 INSERT INTO offers VALUES ('Starbucks (Library)', 'Caramel Macchiato');
 INSERT INTO offers VALUES ('Starbucks (Library)', 'Cold Brew');
@@ -504,5 +524,14 @@ INSERT INTO contains VALUES ('Chicken Philly', 'Red Onions');
 INSERT INTO contains VALUES ('Shawarma', 'Chicken');
 INSERT INTO contains VALUES ('Shawarma', 'Pickle');
 INSERT INTO contains VALUES ('Shawarma', 'Wrap');
+INSERT INTO contains VALUES ('Black Forest Ham & Swiss on a Gluten Free Bun', 'Cheese');
+INSERT INTO contains VALUES ('Black Forest Ham & Swiss on a Gluten Free Bun', 'Ham');
+INSERT INTO contains VALUES ('Cappuccino', 'Milk');   
+INSERT INTO contains VALUES ('Chicken Bacon Club', 'Bacon');   
+INSERT INTO contains VALUES ('Chicken Bacon Club', 'Chicken');   
+INSERT INTO contains VALUES ('Cookie', 'Egg');   
+INSERT INTO contains VALUES ('Cookie', 'Milk');
+INSERT INTO contains VALUES ('Donut', 'Egg');
+INSERT INTO contains VALUES ('PB&J', 'Peanuts');
 
 
