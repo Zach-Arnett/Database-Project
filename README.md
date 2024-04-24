@@ -5,7 +5,7 @@
     b) type ssh yourFlashlineUsername@dbdev.cs.kent.edu <br>
     c) type flashline password <br>
     c) type mysql FLASHLINEUSERNAME -p <br>
-3) Drop all previous tables in your databse
+3) Drop all previous tables in your database
 4) Import `menu-ddl.sql`
 5) Import `menu-dml.sql`
 
