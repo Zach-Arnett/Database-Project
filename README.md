@@ -7,8 +7,9 @@
     c) type flashline password <br>
     c) type mysql FLASHLINEUSERNAME -p <br>
 3) Drop all previous tables in your database
-4) Import `menu-ddl.sql`
-5) Import `menu-dml.sql`
+4) Open the directory Database-Project/sql/ <br>
+5) Import `menu-ddl.sql` <br>
+6) Import `menu-dml.sql` <br>
 
 ## Uploading Files to DBDev to be hosted
 1) Download Filezilla (You can also use SSH but it's way more tedious)

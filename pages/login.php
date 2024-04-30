@@ -1,6 +1,5 @@
-<!-- TEST Login Page -->
 <!-- User Login -->
-<!-- Access through https://dbdev.cs.kent.edu/~zarnett2/Database-Project/pages/login.php -->
+<!-- Access through https://dbdev.cs.kent.edu/(flashlineUsername)/Database-Project/pages/login.php -->
 <!-- Must upload files to dbdev (using Filezilla is easiest) -->
 
 <html>
