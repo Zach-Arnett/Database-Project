@@ -21,10 +21,10 @@
 }
 
 .submit-button{
-    width: 10%;
+    width: 30%;
     border: 0.01em solid #000000; 
-    padding: 0.5em;
-    margin: 0.2em;
+    padding: 0.8em;
+    margin: 0.5em;
     background-color: #eaab00;
     cursor: pointer;
     font-weight: bold;
@@ -32,4 +32,19 @@
 .submit-button:hover{
     background-color: #cd9600;
     transition-duration: 0.3s;
+}
+
+.form-group{
+    margin-bottom: 0.5em;
+}
+.form-group label {
+    display: block; 
+    margin-bottom: 0.1em;
+    font-weight: bold;
+}
+.form-group input {
+    width: 30%; 
+    padding: 0.5em; 
+    box-sizing: border-box; 
+    background-color: #f4f4f4;
 }
