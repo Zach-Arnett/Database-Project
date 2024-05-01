@@ -148,7 +148,7 @@ INSERT INTO food_items VALUES('Grilled Cheese', 4.49, 'Main', TRUE);
 INSERT INTO food_items VALUES('Chicken Philly', 8.99, 'Main', TRUE); -- End new items
 INSERT INTO food_items VALUES ('Italian Sub', 9.49, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Mozzarella Sticks', 5.49, 'Main', TRUE);
-INSERT INTO food_items VALUES ('Salmon Avacado Roll', 9.99, 'Main', FALSE);
+INSERT INTO food_items VALUES ('Salmon Avocado Roll', 9.99, 'Main', FALSE);
 INSERT INTO food_items VALUES ('Falafel Wrap', 10.19, 'Main', TRUE);
 INSERT INTO food_items VALUES ('The Black Squirrel', 9.49, 'Main', TRUE);
 INSERT INTO food_items VALUES ('Metropolitan Express', 9.59, 'Main', TRUE);
@@ -186,6 +186,14 @@ INSERT INTO food_items VALUES ('Pink Drink', 5.00, 'Drink', FALSE);
 INSERT INTO food_items VALUES ('Grilled Cheese (Side)', 3.49, 'Side', FALSE);
 INSERT INTO food_items VALUES ('Chocolate Cake Pop', 5.29, 'Side', FALSE);
 INSERT INTO food_items VALUES ('Coffee Cake', 4.59, 'Side', FALSE);
+
+INSERT INTO food_items VALUES ('Plain Bagel', 2.50, 'Main', FALSE); -- This and down are new menu items
+INSERT INTO food_items VALUES ('Everything Bagel', 2.99, 'Main', FALSE);
+INSERT INTO food_items VALUES ('Six Cheese Bagel', 2.99, 'Main', FALSE);
+INSERT INTO food_items VALUES ('Tiger Roll', 8.99, 'Main', FALSE);
+INSERT INTO food_items VALUES ('Poke Nigiri', 9.99, 'Main', FALSE);
+INSERT INTO food_items VALUES ('Sushi', 7.49, 'Main', FALSE);
+
 -- (ingredient_name)
 INSERT INTO ingredients VALUES ('Cheese');
 INSERT INTO ingredients VALUES ('Chocolate');
@@ -200,7 +208,7 @@ INSERT INTO ingredients VALUES ('Pepperoni');
 INSERT INTO ingredients VALUES ('Salami');
 INSERT INTO ingredients VALUES ('Ham');
 INSERT INTO ingredients VALUES ('Salmon');
-INSERT INTO ingredients VALUES ('Avacado');
+INSERT INTO ingredients VALUES ('Avocado');
 INSERT INTO ingredients VALUES ('Sesame');
 INSERT INTO ingredients VALUES ('Falafel');
 INSERT INTO ingredients VALUES ('Hummus');
@@ -232,7 +240,7 @@ INSERT INTO ingredients VALUES ('Strawberry');
 INSERT INTO ingredients VALUES ('Sourdough Bread');
 INSERT INTO ingredients VALUES ('Tapioca Pearls');
 INSERT INTO ingredients VALUES ('Flour');
-INSERT INTO ingredients VALUES ('Tortilla'); -- New ingredients from here down until allergens start
+INSERT INTO ingredients VALUES ('Tortilla'); 
 INSERT INTO ingredients VALUES ('Pancake Mix');
 INSERT INTO ingredients VALUES ('Mozzarella Cheese');
 INSERT INTO ingredients VALUES ('Pepperjack Cheese');
@@ -242,6 +250,15 @@ INSERT INTO ingredients VALUES ('Bread');
 INSERT INTO ingredients VALUES ('Wrap');
 INSERT INTO ingredients VALUES ('Hamburger Bun');
 INSERT INTO ingredients VALUES ('Peanuts');
+
+INSERT INTO ingredients VALUES ('Imitation Crab'); -- This and below are new ingredients
+INSERT INTO ingredients VALUES ('Shrimp');
+INSERT INTO ingredients VALUES ('Tuna');
+INSERT INTO ingredients VALUES ('Rice');
+INSERT INTO ingredients VALUES ('Soy Sauce');
+INSERT INTO ingredients VALUES ('Sesame Seeds');
+INSERT INTO ingredients VALUES ('Butter');
+
 -- (ingredient_name, allergen)
 INSERT INTO allergens VALUES ('Cheese', 'Dairy');
 INSERT INTO allergens VALUES ('Egg', 'Egg');
@@ -263,11 +280,20 @@ INSERT INTO allergens VALUES ('Biscuit', 'Wheat');
 INSERT INTO allergens VALUES ('English Muffin', 'Wheat');
 INSERT INTO allergens VALUES ('Sourdough Bread', 'Wheat');
 INSERT INTO allergens VALUES ('Flour', 'Wheat');
-INSERT INTO allergens VALUES ('Pepperjack Cheese', 'Dairy'); -- New allergens from here down
+INSERT INTO allergens VALUES ('Pepperjack Cheese', 'Dairy');
 INSERT INTO allergens VALUES ('Pancake Mix', 'Dairy');
 INSERT INTO allergens VALUES ('Pancake Mix', 'Soy');
 INSERT INTO allergens VALUES ('Pancake Mix', 'Wheat');
 INSERT INTO allergens VALUES ('Peanuts', 'Peanuts');
+
+INSERT INTO allergens VALUES ('Butter', 'Dairy'); -- This and down are new allergens
+INSERT INTO allergens VALUES ('Salmon', 'Fish');
+INSERT INTO allergens VALUES ('Tuna', 'Fish');
+INSERT INTO allergens VALUES ('Imitation Crab', 'Shellfish');
+INSERT INTO allergens VALUES ('Shrimp', 'Shellfish');
+INSERT INTO allergens VALUES ('Soy Sauce', 'Soy');
+INSERT INTO allergens VALUES ('Sesame Seeds', 'Sesame');
+
 
 -- ----------Referencing Tables (Multiple Foreign Keys)
 -- (customer_ID, order_ID)
@@ -345,7 +371,7 @@ INSERT INTO offers VALUES ('Grill 72', 'Potato Chips');
 INSERT INTO offers VALUES ('Grill 72', 'Fountain Drink');
 INSERT INTO offers VALUES ('Grill 72', 'Bottled Water');
 
-INSERT INTO offers VALUES ('Wild Blue', 'Salmon Avacado Roll');
+INSERT INTO offers VALUES ('Wild Blue', 'Salmon Avocado Roll');
 INSERT INTO offers VALUES ('Wild Blue', 'Fountain Drink'); 
 INSERT INTO offers VALUES ('Wild Blue', 'Bottled Water'); 
 
@@ -368,7 +394,7 @@ INSERT INTO offers VALUES ('Tahini', 'Dr. Pepper');
 INSERT INTO offers VALUES ('Tahini', 'Pepsi');
 INSERT INTO offers VALUES ('Tahini', 'Strawberry Bubble Tea');
 INSERT INTO offers VALUES ('Tahini', 'Bottled Water');
-INSERT INTO offers VALUES ('Tahini', 'Burger'); -- New items here down for Tahini
+INSERT INTO offers VALUES ('Tahini', 'Burger');
 INSERT INTO offers VALUES ('Tahini', 'Shawarma');
 
 INSERT INTO offers VALUES ('George T. Simon III Cafe', 'Breakfast Sandwich');
@@ -408,6 +434,16 @@ INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Light Roast');
 INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Pink Drink');
 INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Coffee Cake');
 INSERT INTO offers VALUES ('Starbucks (Esplanade)', 'Chocolate Cake Pop');
+
+
+INSERT INTO offers VALUES ('Einstein Bagels', 'Six Cheese Bagel'); -- New Items here down
+INSERT INTO offers VALUES ('Einstein Bagels', 'Plain Bagel');
+INSERT INTO offers VALUES ('Einstein Bagels', 'Everything Bagel');
+INSERT INTO offers VALUES ('Wild Blue', 'Tiger Roll');
+INSERT INTO offers VALUES ('Wild Blue', 'Poke Nigiri');
+INSERT INTO offers VALUES ('Wild Blue', 'Sushi');
+
+
 -- (item_name, ingredient_name)
 INSERT INTO contains VALUES ('Burger', 'Cheese');
 INSERT INTO contains VALUES ('Burger', 'Beef');
@@ -455,9 +491,9 @@ INSERT INTO contains VALUES ('Italian Sub', 'Pepperoni');
 INSERT INTO contains VALUES ('Italian Sub', 'Salami');
 INSERT INTO contains VALUES ('Italian Sub', 'Ham');
 INSERT INTO contains VALUES ('Mozzarella Sticks', 'Cheese');
-INSERT INTO contains VALUES ('Salmon Avacado Roll', 'Salmon');
-INSERT INTO contains VALUES ('Salmon Avacado Roll', 'Avacado');
-INSERT INTO contains VALUES ('Salmon Avacado Roll', 'Sesame');
+INSERT INTO contains VALUES ('Salmon Avocado Roll', 'Salmon');
+INSERT INTO contains VALUES ('Salmon Avocado Roll', 'Avocado');
+INSERT INTO contains VALUES ('Salmon Avocado Roll', 'Sesame');
 INSERT INTO contains VALUES ('Falafel Wrap', 'Falafel');
 INSERT INTO contains VALUES ('Falafel Wrap', 'Hummus');
 INSERT INTO contains VALUES ('Falafel Wrap', 'Pickle');
@@ -533,5 +569,25 @@ INSERT INTO contains VALUES ('Cookie', 'Egg');
 INSERT INTO contains VALUES ('Cookie', 'Milk');
 INSERT INTO contains VALUES ('Donut', 'Egg');
 INSERT INTO contains VALUES ('PB&J', 'Peanuts');
+
+
+INSERT INTO contains VALUES ('Plain Bagel', 'Butter'); -- This and down are new items
+INSERT INTO contains VALUES ('Plain Bagel', 'Bagel');
+INSERT INTO contains VALUES ('Everything Bagel', 'Butter');
+INSERT INTO contains VALUES ('Everything Bagel', 'Bagel');
+INSERT INTO contains VALUES ('Everything Bagel', 'Sesame Seeds');
+INSERT INTO contains VALUES ('Six Cheese Bagel', 'Butter');
+INSERT INTO contains VALUES ('Six Cheese Bagel', 'Bagel');
+INSERT INTO contains VALUES ('Six Cheese Bagel', 'Cheese');
+INSERT INTO contains VALUES ('Six Cheese Bagel', 'Cheddar Cheese');
+INSERT INTO contains VALUES ('Poke Nigiri', 'Salmon');
+INSERT INTO contains VALUES ('Poke Nigiri', 'Tuna');
+INSERT INTO contains VALUES ('Tiger Roll', 'Shrimp');
+INSERT INTO contains VALUES ('Tiger Roll', 'Avocado');
+INSERT INTO contains VALUES ('Tiger Roll', 'Rice');
+INSERT INTO contains VALUES ('Sushi', 'Rice');
+INSERT INTO contains VALUES ('Sushi', 'Salmon');
+INSERT INTO contains VALUES ('Sushi', 'Avocado');
+INSERT INTO contains VALUES ('Sushi', 'Soy Sauce');
 
 
