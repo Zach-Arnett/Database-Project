@@ -91,6 +91,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 echo "<input class=\"option-button\" type=\"submit\" value=\"Meal Exchange\">";
                                 echo "<input type=\"hidden\" name=\"ME_location_selected\" value=\"$location\">";
                             echo "</form>";
+                        } else {
+                            echo "<form method=\"post\">";
+                                echo "<input class=\"button-unavailable\" disabled=\"disabled\" type=\"submit\" value=\"Meal Exchange Unavailable\">";
+                            echo "</form>";
                         }
                         // Declining Balance / Credit / Debit
                         echo "<form method=\"post\">";
